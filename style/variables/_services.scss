@@ -1,0 +1,38 @@
+#services{
+    padding: 6em 0 3em 0;
+    .container{
+        max-width: 1000px;
+        .card{
+            margin: 1em 0;
+            height: auto;
+            max-width: 500px;
+            border: 1px solid black;
+            .card-img-top{
+                height: 250px;
+                object-fit: cover;
+            }
+            .card-title{
+                display: inline-block;
+                margin: 0;
+            }
+            button{
+                float: right;
+                background-color: gray;
+                border: none;
+                :focus{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    .container{
+        .card{
+            .card-img-top{
+                height: 500px !important;
+            }
+        }
+    }
+}

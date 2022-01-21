@@ -1,0 +1,77 @@
+@use 'style/variables/navbar';
+@use 'style/variables/variables';
+@use 'style/variables/contact';
+@use 'style/variables/services';
+@use 'style/variables/index';
+@use 'style/variables/section-services';
+
+@use 'sass:color';
+
+*, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0;}
+
+h1{
+  color: color.adjust(variables.$black, $lightness: 0%);
+  font-size: 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+h2{
+  color: variables.$black;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  color: variables.$black;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+h4{
+  color: variables.$black;
+  font-size: 30px;
+}
+h5{
+  color: variables.$black;
+  font-size: 16px;
+}
+h6{
+  color: variables.$black;
+  font-size: 12px;
+}
+
+p{
+  @include variables.text;
+  font-size: 16px;
+}
+
+a,
+a:hover,
+a:active{
+  @include variables.links;
+  text-decoration: none;
+  color: black;
+}
+
+@media  screen and (max-width:950px) {
+  h1{font-size: 60px;}
+  h2{font-size: 40px;}
+  h3{font-size: 30px;}
+  h4{font-size: 24px;}
+}
+
+footer{
+  height: auto;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(219, 219, 219);
+  color: variables.$black;
+  text-align: center;
+  font-weight: bold;
+  .container{
+    padding: 1em 0;
+  }
+}
+
+main{
+  margin: 0;
+  padding: 10px;
+  min-height: 100vh;
+}

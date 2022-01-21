@@ -1,0 +1,18 @@
+{
+  "name": "gestion-af",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "gsap": "^3.9.1",
+    "sass": "^1.45.2",
+    "swiper": "^7.4.1"
+  }
+}
