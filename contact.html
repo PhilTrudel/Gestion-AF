@@ -17,7 +17,7 @@
     <nav class="Nav">
       <div class="menu">
         <div class="logo">
-          <a href="/"><img src="#" alt="Logo"/></a>
+          <a href="./index.html"><img src="#" alt="Logo"/></a>
         </div>
         <div class="menu__toggle">
           <a><i class="ri-menu-3-fill"></i></a>
@@ -44,7 +44,7 @@
           <div class="grid__text">
             <h4>Pour en savoir plus sur nos services ou pour une demande de soumission, contactez&nbsp;notre&nbsp;équipe.</h4>
             <hr>
-            <h5>Gestion A&F inc.<br>RBQ XXXX-XXXX-XX</h5>
+            <h5>Gestion A&F inc.<br>RBQ 5806-1391-01</h5>
             <h5>
               <a href="tel:4388305033">438 830-5033</a>
               <br>
@@ -55,11 +55,11 @@
           </div>
           <div class="grid__form">
               <h4>Pour nous joindre :</h4>
-              <form action="">
-              <input type="text" placeholder="Nom*">
-              <input type="tel" placeholder="Téléphone*" inputmode="decimal">
-              <input type="email" placeholder="Courriel*"><br>
-              <input type="text" placeholder="Message*">
+              <form action="mail_handler.php" method="post">
+              <input type="text" placeholder="Nom" name="first_name" required>
+              <input type="tel" placeholder="Téléphone" inputmode="decimal" required>
+              <input type="email" placeholder="Courriel" name="email" required>
+              <textarea class="message" name="message" placeholder="Message"></textarea><br>
               <input class="submit" type="submit" value="Soumettre">
           </form>
           </div>
@@ -67,7 +67,7 @@
       </section>
       <section>
         <div class="container__img">
-          <img class="partenaire__img" src="\medias\apchq.png" alt="">
+          <img class="partenaire__img" src="./medias/apchq.png" alt="">
         </div>
       </section>
     </main>
@@ -78,9 +78,6 @@
             </span>
           </div>
     </footer>
-
-    
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
