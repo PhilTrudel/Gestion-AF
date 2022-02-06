@@ -8,13 +8,14 @@
     .grid{
         display: grid;
         position: relative;
-        grid-template-columns: 1fr;
+        //grid-template-columns: 1fr;
         gap: 10px;
         width: 100%;
         justify-content: center;
         align-items: center;
+        text-align: center;
         height: auto;
-        top:10vh;
+        top:15vh;
         margin: auto 0;
         .grid__text{
             padding: 20px 20px 0px 20px;
@@ -107,8 +108,8 @@
 
 @media screen and (min-width:768px){
         .grid{
-            grid-template-columns: 1fr 1fr !important;
-            max-width: 850px;
+            //grid-template-columns: 1fr 1fr !important;
+            //max-width: 850px;
             .grid__form{
                 max-width: 500px;
             }

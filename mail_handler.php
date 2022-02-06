@@ -1,3 +1,4 @@
+<h3>Votre message a bien été envoyé. Merci.</h3>
 <?php 
 if(isset($_POST['submit'])){
     $to = "franco@gestion-af.com"; // this is your Email address
